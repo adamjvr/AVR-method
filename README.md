@@ -10,39 +10,42 @@ making the BOM more informative to the PCB assembler. It also is for keeping
 track of part lifecycle, cost, function, and information all in one place, the
 part symbol itself. All components have the same metadata fields. This keeps the BOM generation simple and consistent. If  given component does not have entry for one of the metadata fields, simply leave the default value of * in place. In the future I'm going to develop a library management tool for that utilizes this metadata system I've developed over the years.
 
-* Reference
-* Value
-* Footprint
-* Datasheet
-* Cost QTY:1
-* Cost QTY:1000
-* Cost QTY:3000
-* Cost QTY:5000
-* Cost QTY:10000
-* MFR
-* MFR#
-* Vendor
-* Vendor #
-* Designer
-* Height
-* Date Created
-* Date Modified
-* Lead-Free?
-* RoHS Levels
-* Mounting
-* Pin Count #
-* Status
-* Tolerance
-* Type
-* Voltage
-* Package
-* Component
-* \_Value\_
-* Management_ID
+##### KiCAD Reserved:
+* Reference - the character used for the designator
+* Value - displays the library reference name of the part.
+* Footprint - displays KiCAD footprint linked to symbol
+* Datasheet - URL for the datasheet of part
+
+##### AVR-Method Defined:
+* Cost QTY:1 - Price in quantity of 1 for the listed vendor
+* Cost QTY:1000 - Price in quantity of 1000 for the listed vendor
+* Cost QTY:3000 - Price in quantity of 3000 for the listed vendor
+* Cost QTY:5000 - Price in quantity of 5000 for the listed vendor
+* Cost QTY:10000 - Price in quantity of 10000 for the listed vendor
+* MFR - component manufacture
+* MFR# -  manufacture part number for Component
+* Vendor - vendor of choice for purchasing component
+* Vendor # - vendor part number
+* Designer -  Design engineer who drew symbol
+* Height - component height on PCB, assemblers appreciate this information alot
+* Date Created - Date symbol is created and added to library
+* Date Modified - the last date on which the symbol was modified in any way
+* Lead-Free? - Is the component lead free/RoHS compliant
+* RoHS Levels - If so what level(s) of RoHS compliance does it have
+* Mounting - SMT or through hole mounting, how component mounts to PCB etc
+* Pin Count # - amount of pins on component for applicable parts
+* Status - whether or not the component is in active production or discontinued
+* Tolerance - tolerance margin of the component value on appplicable components
+* Type - Type of component, passive, IC, connector, resistor, cap, etc.
+* Voltage -  Voltage rating of the component where applicable
+* Package -  component standardized package, 0603 resistors, QFNs, TQFP, etc
+* Description - Short Description about the part, usually the Digikey one
+* \_Value\_ - For displaying the component value of a passive or IC part number
+* Management_ID - AVR-Method unique ID for tracking component lifecycle
 
 #### Capacitors
 Capacitors are contained within their own sub-library, I keep all types of
-capctitors in one library, if you have many capacitors of various types it might
+capacitors in one library, if you have many capacitors of various types it might
 be more helpful to have additional sub libraries but find this makes Schematic
 capture even longer.
 
@@ -78,4 +81,4 @@ CON-12092018-J8R77GQ9
 SPE-07122018-H8U99G03
 
 #### Example of Fields:
-![alt text](imgs\ICs-Template.png "ICs Example")
+![alt text](imgs/ICS-example.png "ICs Example")
