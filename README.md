@@ -1,5 +1,6 @@
-# AVR-method
-My Personal KiCAD Library Management Workflow and practices.
+# AVR-method A KiCAD Library Standard 
+My Personal KiCAD Library Management Workflow and practices. A Standard on which
+to develop well organized and informative KiCAD libraries.
 
 ## Schematic Symbol Library Specifications
 Components should be separated by types into the following categories:
