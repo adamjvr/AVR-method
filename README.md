@@ -1,6 +1,7 @@
-# AVR-method A KiCAD Library Standard 
+# AVR-method A KiCAD Library Standard
 My Personal KiCAD Library Management Workflow and practices. A Standard on which
-to develop well organized and informative KiCAD libraries.
+to develop well organized and informative KiCAD libraries.Hackaday Project:
+https://hackaday.io/project/162410-avr-method-a-kicad-library-standard
 
 ## Schematic Symbol Library Specifications
 Components should be separated by types into the following categories:
@@ -48,23 +49,28 @@ part symbol itself. All components have the same metadata fields. This keeps the
 Capacitors are contained within their own sub-library, I keep all types of
 capacitors in one library, if you have many capacitors of various types it might
 be more helpful to have additional sub libraries but find this makes Schematic
-capture even longer.
+capture even longer. Designator letter C
 
 #### Resistors
 Resistors are contained within their own sub-library, all types in one, I only
-use SMT resistors so there isn't much variation aside from size.
+use SMT resistors so there isn't much variation aside from size. Designator
+letter R.
+
+#### Inductors
+Contains all inductors and inductor type components, designator letter L.
 
 #### Connectors
-All Connectors in one library,
+All Connectors in one library. Designator Lettor T.
 
 #### ICs (Integrated Circuits)
-All ICs in one library, if you have a diverse collection perhaps sublibraries for types, but remember cycling through folders is a waste of time that could be better spent drawring the schematic.
+All ICs in one library, if you have a diverse collection perhaps sublibraries for types, but remember cycling through folders is a waste of time that could be better spent drawring the schematic. Designator Letter U.
 
 #### Mounting Holes & Fasteners
 All mounting holes of all types, holes for screws of various size, standoffs,PEMS, etc.
+Designator letter H.
 
 #### Special
-The Special category is for PCB mounted components that are out of the ordinary. These parts don't always have to be electrical. A good example is the lens mount for a camera image sensor that has to be board mounted. Another common example would be fiducials for pick and place assembly alignment.
+The Special category is for PCB mounted components that are out of the ordinary. These parts don't always have to be electrical. A good example is the lens mount for a camera image sensor that has to be board mounted. Another common example would be fiducials for pick and place assembly alignment. Designator letter SP. 
 
 #### Management ID
 The Management ID is a unique alpha numeric string used as an identifier for each component relative to the library as a whole. The number contains the type of component, date created, and a unique 8 digit alpha numeric identifier string.
