@@ -87,5 +87,8 @@ CON-12092018-J8R77GQ9
 
 SPE-07122018-H8U99G03
 
+Prototype of Management ID Script that generates 32 character management IDs, still evaluating if I want to do it the old way above, take it for a spin and open an issue !! Lets build this together !!
+https://github.com/adamjvr/kicad-management-id
+
 #### Example of Fields:
 ![alt text](imgs/ICS-example.png "ICs Example")
