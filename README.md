@@ -91,4 +91,4 @@ Prototype of Management ID Script that generates 32 character management IDs, st
 https://github.com/adamjvr/kicad-management-id
 
 #### Example of Fields:
-![alt text](imgs/ICS-example.png "ICs Example")
+![alt text](imgs/Oscillator-Exmample-linux.png "ICs Example")
