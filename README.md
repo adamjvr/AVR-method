@@ -92,3 +92,8 @@ https://github.com/adamjvr/kicad-management-id
 
 #### Example of Fields:
 ![alt text](imgs/Oscillator-Exmample-linux.png "ICs Example")
+
+
+Created by Adam Vadala-Roth
+
+CERN Open Hardware License Version 2.0 Strongly Reciprocal 
